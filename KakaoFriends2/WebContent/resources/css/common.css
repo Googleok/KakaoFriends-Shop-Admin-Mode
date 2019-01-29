@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kakao';
+	src: url("../font/kakao.otf");
+    src: url("../font/kakao.woff2") format("woff2"),
+         url("../font/kakao.woff") format("woff");
+}
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, button,
+article, aside, canvas, details, embed, figure, figcaption, footer, #header, menu,
+nav, output, ruby, section, summary, time, mark, audio, video
+{ margin:0;padding:0;border:0;}
+article, aside, details, figcaption, figure, footer, #header, menu, nav, section { display: block;}
+html {height:auto;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; }
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+a {text-decoration:none;color:inherit;}
+a:hover {text-decoration:none;}
+legend, caption, hr {display:none;}
+em {font-style:normal;}
+img {vertical-align:top;max-width: 100%;}
+input {vertical-align:middle;}
+p,h3,h2,h1{letter-spacing: normal;}
+input,textarea,button,select{ font-family: "kakao",  sans-serif; }
+section{width:100%;text-align: center;}
+html, body { display: block;position: relative;-webkit-text-size-adjust: none;}
+body{font-family:'kakao',sans-serif;width: 100%; color:#333333;background-color: #fff}
+
+#wrap {max-width:2100px;position:relative;margin:0 auto;opacity:0;}
+#wrap.show {opacity:1;}
+
+.w_br {display:inline-block;}
+.m_br {display:none;}
+
+.main_top {position:relative;padding:47px 0 420px 0;background:url('../../images/top_main_w.jpg') no-repeat center bottom;box-sizing:border-box;}
+.main_top h1 {width:195px;margin:0 auto;background:url('../../images/kakao_logo.png') no-repeat 0 0;background-size:195px;text-indent:-9999em;}
+.main_top h2 {font-size:38px;color:#fff;line-height:38px;margin-top:40px;text-align:center;font-weight:500;}
+.main_top .user_img_box {margin:17px auto 0;position:relative;padding:6px;text-align:center;}
+.main_top .user_img_box .user_image {display:inline-block;position:relative;}
+.main_top .user_img_box .user_image img {border:2px solid #c28729;padding:5px;}
+.main_top .user_img_box .user_image.width img {max-width:550px;}
+.main_top .user_img_box .user_image.height img {max-height:550px;}
+.main_top .ryan_night {display:none;width:178px;height:234px;position:absolute;left:-160px;bottom:0;background:url('../../images/ryan_night.png') no-repeat 0 0;}
+.main_top .image_text {margin-top:23px;text-align:center;font-size:22px;color:#fff;line-height:30px;}
+
+.intro {position:relative;text-align:center;padding-top:65px;}
+.intro .title {font-size:48px;color:#333;line-height:48px;}
+.intro .sub {font-size:30px;color:#666;line-height:30px;margin-top:10px;}
+.intro .youtube {width:100%;margin:35px auto 0;}
+.intro .youtube iframe{}
+.intro .desc {font-size:18px;color:#333;line-height:40px;margin-top:40px;letter-spacing: -1.5px}
+
+.info {position:relative;background:url('../../images/cloud_w.jpg') no-repeat center 0;margin-top:35px;padding-top:85px;box-sizing:border-box;}
+.info .title {font-size:38px;color:#333;text-align:center;line-height:38px;}
+.info .sub {font-size:26px;color:#666;text-align:center;line-height:26px;margin-top:5px}
+.info .info_ul {width:1160px;overflow:hidden;margin:105px auto 0;}
+.info .info_ul li {width:25%;float:left;position:relative;text-align:center;}
+.info .info_ul li:before {content:'';width:1px;height:68px;background:#fedaa7;position:absolute;right:0;top:42px;}
+.info .info_ul li:last-child:before {display:none;}
+.info .info_ul li .round_text {width:100px;height:28px;background:#fff;border-radius:28px;font-size:16px;color:#fbb952;line-height:28px;margin:0 auto;}
+.info .info_ul li .txt {margin-top:13px;font-size:22px;color:#333;line-height:22px;}
+.info .info_ul li .sub_txt {font-size:15px;color:#666;line-height:22px;margin-top:10px;}
+.info .map_area {width:820px;margin:80px auto 0;position:relative;padding:0 160px;}
+.info .map_area .ryan {width:242px;height:335px;background:url('../../images/ryan.png') no-repeat 0 0;position:absolute;left:-20px;top:240px;}
+.info .map_box {width:820px;position:relative;overflow:hidden;border-radius:10px;
+    -webkit-box-shadow: 0px 31px 60px 9px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 31px 60px 9px rgba(0,0,0,0.1);
+    box-shadow: 0px 31px 60px 9px rgba(0,0,0,0.1);}
+.info .map_box .map {height:420px;position:relative;}
+.info .map_box .wrap_map {height:387px;}
+.info .map_box .root_daum_roughmap {width:100%;height:420px;}
+.info .map_box .location_info {height:100px;box-sizing:border-box;padding:30px 0 0 30px;background:#fff;}
+.info .map_box .location_info .loc_title {font-size:20px;color:#333;line-height:20px;}
+.info .map_box .location_info .loc_txt {font-size:15px;color:#666;line-height:15px;margin-top:8px;}
+
+.museum {position:relative;margin-top:145px;text-align:center;}
+.museum .museum_img {width:408px;height:238px;margin:0 auto;background:url('../../images/kakao_friends.jpg') no-repeat 0 0;text-indent:-9999em;background-size:408px}
+.museum .corp {margin-top:84px;font-size:16px;color:#989693;}
+
+.notice {width:1000px;margin:100px auto 0;padding:60px 10px 120px 10px;overflow:hidden;border-top:1px solid #dfdfdf;text-align:left;}
+.notice .title {font-size:24px;color:#333;line-height:24px;margin-bottom:28px;}
+.notice .notice_ul {overflow:hidden;float:left;}
+.notice .notice_ul:last-child {margin-left:25px;}
+.notice .notice_ul li {padding-left:12px;position:relative;font-size:17px;color:#333;line-height:36px;}
+.notice .notice_ul li:before {content:'';width:2px;height:2px;background:#333;position:absolute;left:0;top:14px;border-radius:2px;}
+
+
+@media all and (max-width: 1160px){
+    .w_br {display:none;}
+    .m_br {display:inline-block;}
+
+    .main_top {padding:85px 0 216px 0;/*background:url('../images/main/top_main_m.jpg') no-repeat center bottom;*/background-size:1160px;}
+    .main_top h1 {width:119px;height:21px;background-size:119px;margin-top:-50px;}
+    .main_top h2 {font-size:26px;line-height:26px;margin-top:20px;}
+
+    .main_top .user_img_box {margin:17px auto 0;position:relative;}
+    .main_top .user_img_box .user_image img {padding:3px;}
+    .main_top .user_img_box .user_image.width img {max-width:239px;}
+    .main_top .user_img_box .user_image.height img {max-height:239px;}
+
+    .main_top .ryan_night {width:89px;height:117px;left:-60px;bottom:-10px;background-size:89px;}
+    .main_top .image_text {margin-top:18px;text-align:center;font-size:16px;line-height:23px;padding-bottom: 30px;}
+
+    .intro {position:relative;text-align:center;padding-top:50px;}
+    .intro .title {font-size:35px;line-height:36px;}
+    .intro .sub {font-size:21px;line-height:21px;margin-top:5px;}
+    .intro .desc {font-size:15px;line-height:24px;margin-top:25px;}
+    .intro .youtube {width:80%;margin:25px auto 0;}
+    .intro .youtube iframe{width:100%;height:385px;}
+
+    .info {background:url('../../images/cloud_w.jpg') no-repeat center -50px;margin-top:0px;padding-top:60px;/*background-size:375px;*/}
+    .info .title {font-size:24px;line-height:24px;}
+    .info .sub {font-size:18px;line-height:18px;}
+    .info .info_ul {width:280px;margin:75px auto 0;}
+    .info .info_ul li {width:100%;float:none;margin-bottom:32px;}
+    .info .info_ul li:before {display:none;}
+    .info .info_ul li .round_text {width:80px;height:24px;font-size:14px;line-height:24px;}
+    .info .info_ul li .txt {margin-top:10px;font-size:18px;line-height:18px;}
+    .info .info_ul li .sub_txt {font-size:12px;line-height:12px;margin-top:8px;}
+    .info .map_area {width:80%;margin:40px auto 0;padding:96px 0 0 0;}
+    .info .map_area .ryan {width:121px;height:167px;background:url('../../images/ryan.png') no-repeat 0 0;position:absolute;left:0;top:0;background-size:121px;}
+    .info .map_box {min-width:270px;width:100%;}
+    .info .map_box .map {height:210px;}
+    .info .map_box .wrap_map {height:177px;}
+    .info .map_box .root_daum_roughmap {height:210px;}
+
+    .info .map_box .location_info {height:78px;padding:20px 0 0 15px;}
+    .info .map_box .location_info .loc_title {font-size:15px;line-height:15px;}
+    .info .map_box .location_info .loc_txt {font-size:12px;line-height:12px;margin-top:8px;}
+
+    .museum {margin-top:75px;}
+    .museum .museum_img {width:249px;height:145px;background:url('../../images/kakao_friends.jpg') no-repeat 0 0;background-size:249px}
+    .museum .corp {margin-top:40px;font-size:15px;}
+
+    .notice {width:100%;margin:55px auto 0;padding:45px 0px 60px 0px;text-align: center;border-top:none;}
+    .notice .title {font-size:18px;line-height:18px;margin-bottom:10px;}
+    .notice .title:before{content: '';background-color: #dfdfdf;display: block;position: relative;width: 90%;height: 1px;margin: 0 auto;top: -45px;}
+    .notice .notice_ul {float:none;display: inline-block;text-align: left;vertical-align: top;width: 320px;}
+    .notice .notice_ul:last-child {margin-left:0;}
+    .notice .notice_ul li {padding-left:9px;font-size:11px;line-height:24px;}
+    .notice .notice_ul li:before {content:'';width:2px;height:2px;background:#333;position:absolute;left:0;top:11px;border-radius:2px;}
+}
+
+@media all and (max-width: 768px) {
+    .intro .youtube iframe{width:100%;height:195px;}
+}
+
+@media all and (max-width: 320px) {
+    .intro .desc {font-size:12px;line-height:24px;margin-top:25px;}
+}
